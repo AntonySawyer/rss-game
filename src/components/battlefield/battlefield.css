@@ -1,0 +1,342 @@
+main {
+  margin: 0 auto; /* Центрируем блоки */
+  width: 100%; /* Задаем ширину 100% что бы сделать ее резиновой */
+  font-size: 0; /* Ставим родителю значение 0, что бы убрать отступы у блоков*/
+  height: 90vh;
+}
+
+main section {
+  display: inline-block; /* Делаем блоки по горизонтали */
+  vertical-align: top; /* Выравниваем их сверху */
+  font-size: 16px; /* Ставим дочкам размер шрифта, иначе примет значение у родителя */
+}
+
+.heroBlock{
+  width: 30%; /* Задаем ширину в процентах что бы сделать ее резиновой */
+  height: 100%; /* Высота блока */
+}
+
+.animation{
+  width: 40%;
+  height: 100%;
+}
+
+.monsterBlock{
+  width: 30%;
+  height: inherit;
+}
+
+#heroName, 
+#monsterName {
+  text-align: center;
+  font-size: 28px;
+}
+
+.pers {
+  height: 350px;
+  width: 380px;
+}
+
+img {
+  height: fit-content;
+
+}
+
+.head {
+  position: absolute;
+  top: 200px;
+  right: 120px;
+}
+
+.body {
+  position: absolute;
+  top: 240px;
+  right: 100px;
+}
+
+.legs {
+	position: absolute;
+	top: 415px;
+	right: 117px;
+}
+
+.armRight {
+  position: absolute;
+  top: 300px;
+  right: 225px;
+}
+
+.armLeft {
+  position: absolute;
+  top: 280px;
+  right: 65px;
+}
+
+.char {
+	width: 6px;
+	height: 6px;
+	font-size: 6px;
+	background: black;
+	margin: 30px auto;
+	
+	/* I forgot to mention that we are drawing a pixel girl here. So first, we'll draw the outline of the whole figure and then start coloring it. Coloring part will be easy. */
+	
+	box-shadow:
+		
+		/* Face */
+		-1em 0 black,
+		1em 0 black,
+		2em 1em black,
+		-2em 1em black,
+		3em 2em black,
+		-3em 2em black,
+		4em 3em black,
+		-4em 3em black,
+		4em 4em black,
+		-4em 4em black,
+		4em 5em black,
+		-4em 5em black,
+		4em 6em black,
+		-4em 6em black,
+		4em 7em black,
+		-4em 7em black,
+		3em 8em black,
+		-3em 8em black,
+		2em 9em black,
+		-2em 9em black,
+		1em 10em black,
+		-1em 10em black,
+	
+		/* Eyes */
+		-1em 3em black,
+		-1em 4em black,
+		1em 3em black,
+		1em 4em black,
+		
+		/* Smile */
+		-2em 6em black,
+		2em 6em black,
+		-1em 7em black,
+		0em 7em black,
+		1em 7em black,
+	
+		/* Face is complete, now we'll move onto the hair */
+		-2em -3em black,
+		-1em -3em black,
+		0em -3em black,
+		1em -3em black,
+		2em -3em black,
+		-3em -2em black,
+		3em -2em black,
+		4em -1em black,
+		-4em -1em black,
+		-5em 0 black,
+		-5em 1em black,
+		5em 0 black,
+		5em 1em black,
+		6em 7em black,
+		6em 2em black,
+		6em 3em black,
+		6em 4em black,
+		6em 5em black,
+		6em 6em black,
+		-6em 7em black,
+		-6em 2em black,
+		-6em 3em black,
+		-6em 4em black,
+		-6em 5em black,
+		-6em 6em black,
+		7em 8em black,
+		7em 9em black,
+		7em 10em black,
+		7em 11em black,
+		7em 12em black,
+		7em 13em black,
+		-7em 8em black,
+		-7em 9em black,
+		-7em 10em black,
+		-7em 11em black,
+		-7em 12em black,
+		-7em 13em black,
+	
+		/* Now, the torso */
+		1em 11em black,
+		-1em 11em black,
+		2em 11em black,
+		-2em 11em black,
+		3em 11em black,
+		-3em 11em black,
+		-4em 12em black,
+		4em 12em black,
+		-5em 13em black,
+		5em 13em black,
+		-6em 14em black,
+		-6em 15em black,
+		-6em 16em black,
+		6em 14em black,
+		6em 15em black,
+		6em 16em black,
+	
+		/* Topper */
+		-4em 16em black,
+		4em 16em black,
+		-3em 17em black,
+		-3em 18em black,
+		-3em 19em black,
+		-3em 20em black,
+		-3em 21em black,
+		-3em 22em black,
+		-3em 23em black,
+		-3em 24em black,
+		-3em 25em black,
+		3em 17em black,
+		3em 18em black,
+		3em 19em black,
+		3em 20em black,
+		3em 21em black,
+		3em 22em black,
+		3em 23em black,
+		3em 24em black,
+		3em 25em black,
+		2em 25em black,
+		1em 25em black,
+		0 25em black,
+		-1em 25em black,
+		-2em 25em black,
+		
+		/* Hands */
+		-5em 17em black,
+		-5em 18em black,
+		-5em 19em black,
+		-5em 20em black,
+		-5em 21em black,
+		-5em 22em black,
+		-5em 23em black,
+		-5em 24em black,
+		-5em 25em black,
+		5em 17em black,
+		5em 18em black,
+		5em 19em black,
+		5em 20em black,
+		5em 21em black,
+		5em 22em black,
+		5em 23em black,
+		5em 24em black,
+		5em 25em black,
+		4em 26em black,
+		-4em 26em black,
+		
+		/* Now only pants and shoes left :D */
+		/* Pants */
+		3em 26em black,
+		3em 27em black,
+		3em 28em black,
+		3em 29em black,
+		3em 30em black,
+		3em 31em black,
+		3em 32em black,
+		3em 33em black,
+		-3em 26em black,
+		-3em 27em black,
+		-3em 28em black,
+		-3em 29em black,
+		-3em 30em black,
+		-3em 31em black,
+		-3em 32em black,
+		-3em 33em black,
+		4em 34em black,
+		4em 35em black,
+		4em 36em black,
+		4em 37em black,
+		4em 38em black,
+		4em 39em black,
+		-4em 34em black,
+		-4em 35em black,
+		-4em 36em black,
+		-4em 37em black,
+		-4em 38em black,
+		-4em 39em black,
+		
+		0 26em black,
+		0 30em black,
+		0 31em black,
+		0 32em black,
+		0 33em black,
+		0 34em black,
+		0 35em black,
+		0 36em black,
+		0 37em black,
+		0 38em black,
+		0 39em black,
+		
+		/* Shoes */
+		-5em 40em black,
+		-4em 40em black,
+		-3em 40em black,
+		-2em 40em black,
+		-1em 40em black,
+		0 40em black,
+		1em 40em black,
+		2em 40em black,
+		3em 40em black,
+		4em 40em black,
+		5em 40em black,
+		-6em 41em black,
+		-6em 42em black,
+		6em 41em black,
+		6em 42em black,
+		-5em 43em black,
+		-4em 43em black,
+		-3em 43em black,
+		-2em 43em black,
+		-1em 43em black,
+		1em 43em black,
+		2em 43em black,
+		3em 43em black,
+		4em 43em black,
+		5em 43em black,
+		0 41em black,
+		0 42em black,
+		
+		/* Outlines are completed, now we'll color the character. For coloring, we will use size/spread parameter (4th parameter) of the box-shadow property to make our code comparitively smaller */
+		
+		/* Face */
+		0 5em 0 3em #FFF5C9,
+		0 1em 0 1em #FFF5C9,
+		0 8em 0 1em #FFF5C9,
+		0 10em #FFF5C9,
+		0 11em #FFF5C9,
+		0 12em #FFF5C9,
+		
+		/* Shirt */
+		0 15em 0 3em purple,
+		0 21em 0 3em purple,
+		4em 14em 0 1em purple,
+		-4em 14em 0 1em purple,
+		4em 15em 0 1em purple,
+		-4em 15em 0 1em purple,
+		
+		/* Pants */
+		0 29em 0 3em red,
+		0 36em 0 3em red,
+		
+		/* Hands */
+		0 20em 0 5em #FFF5C9,
+		
+		/* Hair */
+		0 0 0 2em brown,
+		-3em 0 0 1em brown,
+		3em 0 0 1em brown,
+		4em 3em 0 1em brown,
+		4em 6em 0 1em brown,
+		3em 10em 0 3em brown,
+		-4em 3em 0 1em brown,
+		-4em 6em 0 1em brown,
+		-3em 10em 0 3em brown,
+		
+		/* Shoes */
+		-1em 39em 0 3em pink,
+		1em 39em 0 3em pink,
+		-4em 42em 0 1em pink,
+		4em 42em 0 1em pink
+}
